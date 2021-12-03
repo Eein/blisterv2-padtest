@@ -3,6 +3,9 @@ X O □ ∆
 
 ## Blister v2
 
+### Keyboard in normal port
+Everything seems to map, but its acting as if its in turbo mode
+
 ### PS2 Controller on LLAPI port
 Controller does not register as analog, so some mappings may be missing
 
