@@ -37,7 +37,7 @@ Left -> Left
 Right -> Right
 ```
 
-### PS# Controller plugged into USB port
+### PS3 Controller plugged into USB port
 Controller does not activate/work - looks for bluetooth
 
 ### PS4 Controller plugged into USB port
