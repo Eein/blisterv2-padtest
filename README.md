@@ -17,12 +17,12 @@ X O □ ∆
 
 ![blisster v2](https://git.sr.ht/~eein/padtest-results/blob/master/blister.png)
 
-*Below, the LLAPI port is the weird HDMI-like Bliss-Box port on the above board.*
+*Below, the Bliss/LLAPI port is the weird HDMI-like Bliss-Box port on the above board.*
 
 ### Keyboard in normal port
 Everything seems to map, but its acting as if its in turbo mode
 
-### PS2 Controller on LLAPI port
+### PS2 Controller on Bliss/LLAPI port
 Controller does not register as analog, so some mappings may be missing
 
 ```
@@ -93,7 +93,7 @@ Right -> Right
 PS button -> opens fpga menu
 ```
 
-### Super Famicom/SNES on LLAPI port
+### Super Famicom/SNES on Bliss/LLAPI port
 
 ```
 X -> X
@@ -135,7 +135,7 @@ Left -> Left
 Right -> Right
 ```
 
-### NES on LLAPI port
+### NES on Bliss/LLAPI port
 
 ```
 X (b) -> X
@@ -156,7 +156,7 @@ Left -> Left
 Right -> Right
 ```
 
-### Pokken Tournament Controller on USB port
+### Pokken Tournament (Switch) Controller on USB port
 Controller is dpad only
 
 ```
