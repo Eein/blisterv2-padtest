@@ -1,4 +1,7 @@
 # Padtest
+
+https://github.com/ShendoXT/padtest/releases/tag/1.0
+
 X O □ ∆
 
 ## Blister v2
