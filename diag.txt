@@ -1,0 +1,195 @@
+$ lsusb --verbose
+Bus 001 Device 006: ID 16d0:0d04
+Bus 001 Device 001: ID 1d6b:0002
+Bus 001 Device 002: ID 1a40:0201
+Bus 001 Device 004: ID 16d0:0d04
+Bus 001 Device 003: ID 046d:c315
+
+$ dmesg
+[    0.000000] random: get_random_bytes called from start_kernel+0x32c/0x4ec with crng_init=0
+[    0.000000] clocksource: timer1: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604467 ns
+[    0.000006] sched_clock: 32 bits at 100MHz, resolution 10ns, wraps every 21474836475ns
+[    0.000017] Switching to timer-based delay loop, resolution 10ns
+[    0.000343] Console: colour dummy device 80x30
+[    0.000376] Calibrating delay loop (skipped), value calculated using timer frequency.. 200.00 BogoMIPS (lpj=1000000)
+[    0.000390] pid_max: default: 32768 minimum: 301
+[    0.000510] Mount-cache hash table entries: 1024 (order: 0, 4096 bytes, linear)
+[    0.000523] Mountpoint-cache hash table entries: 1024 (order: 0, 4096 bytes, linear)
+[    0.001144] CPU: Testing write buffer coherency: ok
+[    0.001177] CPU0: Spectre v2: using BPIALL workaround
+[    0.001411] CPU0: thread -1, cpu 0, socket 0, mpidr 80000000
+[    0.002006] Setting up static identity map for 0x100000 - 0x100060
+[    0.002145] rcu: Hierarchical SRCU implementation.
+[    0.002442] smp: Bringing up secondary CPUs ...
+[    0.003119] CPU1: thread -1, cpu 1, socket 0, mpidr 80000001
+[    0.003127] CPU1: Spectre v2: using BPIALL workaround
+[    0.003249] smp: Brought up 1 node, 2 CPUs
+[    0.003260] SMP: Total of 2 processors activated (400.00 BogoMIPS).
+[    0.003266] CPU: All CPU(s) started in SVC mode.
+[    0.003664] devtmpfs: initialized
+[    0.008398] VFP support v0.3: implementor 41 architecture 3 part 30 variant 9 rev 4
+[    0.008607] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+[    0.008627] futex hash table entries: 512 (order: 3, 32768 bytes, linear)
+[    0.009470] NET: Registered protocol family 16
+[    0.010371] DMA: preallocated 256 KiB pool for atomic coherent allocations
+[    0.011289] hw-breakpoint: found 5 (+1 reserved) breakpoint and 1 watchpoint registers.
+[    0.011299] hw-breakpoint: maximum watchpoint size is 4 bytes.
+[    0.026118] vgaarb: loaded
+[    0.026383] SCSI subsystem initialized
+[    0.026579] usbcore: registered new interface driver usbfs
+[    0.026630] usbcore: registered new interface driver hub
+[    0.026672] usbcore: registered new device driver usb
+[    0.026845] usb_phy_generic soc:usbphy: soc:usbphy supply vcc not found, using dummy regulator
+[    0.027771] pps_core: LinuxPPS API ver. 1 registered
+[    0.027781] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    0.027801] PTP clock support registered
+[    0.027969] FPGA manager framework
+[    0.028843] clocksource: Switched to clocksource timer1
+[    0.508468] NET: Registered protocol family 2
+[    0.508605] IP idents hash table entries: 4096 (order: 3, 32768 bytes, linear)
+[    0.509279] tcp_listen_portaddr_hash hash table entries: 512 (order: 0, 6144 bytes, linear)
+[    0.509307] TCP established hash table entries: 2048 (order: 1, 8192 bytes, linear)
+[    0.509335] TCP bind hash table entries: 2048 (order: 2, 16384 bytes, linear)
+[    0.509372] TCP: Hash tables configured (established 2048 bind 2048)
+[    0.509455] UDP hash table entries: 256 (order: 1, 8192 bytes, linear)
+[    0.509480] UDP-Lite hash table entries: 256 (order: 1, 8192 bytes, linear)
+[    0.509627] NET: Registered protocol family 1
+[    0.510077] RPC: Registered named UNIX socket transport module.
+[    0.510087] RPC: Registered udp transport module.
+[    0.510093] RPC: Registered tcp transport module.
+[    0.510099] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    0.510114] PCI: CLS 0 bytes, default 64
+[    0.510688] hw perfevents: enabled with armv7_cortex_a9 PMU driver, 7 counters available
+[    0.511957] workingset: timestamp_bits=30 max_order=16 bucket_order=0
+[    0.518433] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[    0.519166] NFS: Registering the id_resolver key type
+[    0.519194] Key type id_resolver registered
+[    0.519202] Key type id_legacy registered
+[    0.519218] Installing knfsd (copyright (C) 1996 okir@monad.swb.de).
+[    0.519827] ntfs: driver 2.1.32 [Flags: R/W].
+[    0.520136] jffs2: version 2.2. (NAND) © 2001-2006 Red Hat, Inc.
+[    0.520589] fuse: init (API version 7.31)
+[    0.520888] io scheduler mq-deadline registered
+[    0.520899] io scheduler kyber registered
+[    0.528108] dma-pl330 ffe01000.pdma: Loaded driver for PL330 DMAC-341330
+[    0.528125] dma-pl330 ffe01000.pdma:         DBUFF-512x8bytes Num_Chans-8 Num_Peri-32 Num_Events-8
+[    0.531489] Serial: 8250/16550 driver, 2 ports, IRQ sharing disabled
+[    0.532530] printk: console [ttyS0] disabled
+[    0.532586] ffc02000.serial0: ttyS0 at MMIO 0xffc02000 (irq = 39, base_baud = 6250000) is a 16550A
+[    1.131968] printk: console [ttyS0] enabled
+[    1.136732] ffc03000.serial1: ttyS1 at MMIO 0xffc03000 (irq = 40, base_baud = 6250000) is a 16550A
+[    1.147104] brd: module loaded
+[    1.157689] loop: module loaded
+[    1.162452] libphy: Fixed MDIO Bus: probed
+[    1.167142] CAN device driver interface
+[    1.171282] socfpga-dwmac ff702000.ethernet: IRQ eth_wake_irq not found
+[    1.177874] socfpga-dwmac ff702000.ethernet: IRQ eth_lpi not found
+[    1.184154] socfpga-dwmac ff702000.ethernet: PTP uses main clock
+[    1.190335] socfpga-dwmac ff702000.ethernet: Version ID not available
+[    1.196757] socfpga-dwmac ff702000.ethernet:         DWMAC1000
+[    1.201990] socfpga-dwmac ff702000.ethernet: DMA HW capability register supported
+[    1.209460] socfpga-dwmac ff702000.ethernet: RX Checksum Offload Engine supported
+[    1.216910] socfpga-dwmac ff702000.ethernet: COE Type 2
+[    1.222126] socfpga-dwmac ff702000.ethernet: TX Checksum insertion supported
+[    1.229154] socfpga-dwmac ff702000.ethernet: Enhanced/Alternate descriptors
+[    1.236087] socfpga-dwmac ff702000.ethernet: Extended descriptors not supported
+[    1.243373] socfpga-dwmac ff702000.ethernet: Ring mode enabled
+[    1.256980] libphy: stmmac: probed
+[    1.260399] Micrel KSZ9031 Gigabit PHY stmmac-0:01: attached PHY driver [Micrel KSZ9031 Gigabit PHY] (mii_bus:phy_addr=stmmac-0:01, irq=POLL)
+[    1.274208] dwc2 ffb40000.usb: ffb40000.usb supply vusb_d not found, using dummy regulator
+[    1.282535] dwc2 ffb40000.usb: ffb40000.usb supply vusb_a not found, using dummy regulator
+[    1.291006] dwc2 ffb40000.usb: EPs: 16, dedicated fifos, 8064 entries in SPRAM
+[    1.298517] dwc2 ffb40000.usb: DWC OTG Controller
+[    1.303256] dwc2 ffb40000.usb: new USB bus registered, assigned bus number 1
+[    1.310319] dwc2 ffb40000.usb: irq 41, io mem 0xffb40000
+[    1.316314] hub 1-0:1.0: USB hub found
+[    1.320111] hub 1-0:1.0: 1 port detected
+[    1.324856] usbcore: registered new interface driver usb-storage
+[    1.331091] i2c /dev entries driver
+[    1.335703] Synopsys Designware Multimedia Card Interface Driver
+[    1.342198] dw_mmc ff704000.dwmmc0: IDMAC supports 32-bit address mode.
+[    1.348848] dw_mmc ff704000.dwmmc0: Using internal DMA controller.
+[    1.355009] dw_mmc ff704000.dwmmc0: Version ID is 240a
+[    1.360188] dw_mmc ff704000.dwmmc0: DW MMC controller at irq 35,32 bit host data width,1024 deep fifo
+[    1.369593] mmc_host mmc0: card is polling.
+[    1.386398] mmc_host mmc0: Bus speed (slot 0) = 50000000Hz (slot req 400000Hz, actual 396825HZ div = 63)
+[    1.408723] ledtrig-cpu: registered to indicate activity on CPUs
+[    1.414869] usbcore: registered new interface driver usbhid
+[    1.420433] usbhid: USB HID core driver
+[    1.424253] exFAT: Version 1.3.0
+[    1.427869] fpga_manager fpga0: Altera SOCFPGA FPGA Manager registered
+[    1.434839] altera_hps2fpga_bridge ff400000.fpga_bridge: enabling bridge
+[    1.441627] altera_hps2fpga_bridge ff400000.fpga_bridge: fpga bridge [lwhps2fpga] registered
+[    1.450207] altera_hps2fpga_bridge ff500000.fpga_bridge: enabling bridge
+[    1.456965] altera_hps2fpga_bridge ff500000.fpga_bridge: fpga bridge [hps2fpga] registered
+[    1.465356] altera_hps2fpga_bridge ff600000.fpga-bridge: enabling bridge
+[    1.472130] altera_hps2fpga_bridge ff600000.fpga-bridge: fpga bridge [fpga2hps] registered
+[    1.480827] altera_fpga2sdram_bridge ffc25080.fpga-bridge: fpga bridge [fpga2sdram] registered
+[    1.489424] altera_fpga2sdram_bridge ffc25080.fpga-bridge: driver initialized with handoff 00000000
+[    1.498431] altera_fpga2sdram_bridge ffc25080.fpga-bridge: enabling bridge
+[    1.505612] oprofile: using arm/armv7-ca9
+[    1.510484] NET: Registered protocol family 10
+[    1.515916] Segment Routing with IPv6
+[    1.519674] sit: IPv6, IPv4 and MPLS over IPv4 tunneling driver
+[    1.526117] NET: Registered protocol family 17
+[    1.530586] NET: Registered protocol family 15
+[    1.535012] can: controller area network core (rev 20170425 abi 9)
+[    1.541234] NET: Registered protocol family 29
+[    1.545661] can: raw protocol (rev 20170425)
+[    1.549930] can: broadcast manager protocol (rev 20170425 t)
+[    1.555572] can: netlink gateway (rev 20190810) max_hops=1
+[    1.561224] 8021q: 802.1Q VLAN Support v1.8
+[    1.565427] Key type dns_resolver registered
+[    1.569763] ThumbEE CPU extension supported.
+[    1.574022] Registering SWP/SWPB emulation handler
+[    1.582930] of-fpga-region soc:base-fpga-region: FPGA Region probed
+[    1.589326] hctosys: unable to open rtc device (rtc0)
+[    1.594365] of_cfs_init
+[    1.596887] of_cfs_init: OK
+[    1.600426] Waiting for root device /dev/mmcblk0p2...
+[    1.637121] mmc_host mmc0: Bus speed (slot 0) = 50000000Hz (slot req 50000000Hz, actual 50000000HZ div = 0)
+[    1.646923] mmc0: new high speed SDHC card at address 59b4
+[    1.652940] mmcblk0: mmc0:59b4 MS    7.51 GiB
+[    1.659242]  mmcblk0: p1 p2 p3
+[    1.681062] FAT-fs (mmcblk0p2): Volume was not properly unmounted. Some data may be corrupt. Please run fsck.
+[    1.713140] VFS: Mounted root (squashfs filesystem) readonly on device 7:8.
+[    1.724909] devtmpfs: mounted
+[    1.729501] usb 1-1: new high-speed USB device number 2 using dwc2
+[    1.736727] Freeing unused kernel memory: 1024K
+[    1.779057] Run /sbin/init as init process
+[    1.809560] random: fast init done
+[    2.000685] hub 1-1:1.0: USB hub found
+[    2.004560] hub 1-1:1.0: 7 ports detected
+[    2.052448] squashfs: Unknown parameter 'uid'
+[    2.059221] fuseblk: Unknown parameter 'uid'
+[    2.063996] [EXFAT] trying to mount...
+[    2.079468] [EXFAT] mounted successfully
+[    2.253960] EXT4-fs (loop0): recovery complete
+[    2.264378] EXT4-fs (loop0): mounted filesystem with ordered data mode. Opts: (null)
+[    2.328971] usb 1-1.4: new low-speed USB device number 3 using dwc2
+[    2.470345] input: Logitech Logitech USB Keyboard as /devices/platform/soc/ffb40000.usb/usb1/1-1/1-1.4/1-1.4:1.0/0003:046D:C315.0001/input/input0
+[    2.541848] random: crng init done
+[    2.549485] hid-generic 0003:046D:C315.0001: input: USB HID v1.10 Keyboard [Logitech Logitech USB Keyboard] on usb-ffb40000.usb-1.4/input0
+[    3.291768] FPGA Arcade Replay booted
+[    3.548901] usb 1-1.6: new low-speed USB device number 4 using dwc2
+[    3.814972] socfpga-dwmac ff702000.ethernet eth0: PHY [stmmac-0:01] driver [Micrel KSZ9031 Gigabit PHY]
+[    3.829088] socfpga-dwmac ff702000.ethernet eth0: No Safety Features support found
+[    3.836939] socfpga-dwmac ff702000.ethernet eth0: registered PTP clock
+[    3.843488] socfpga-dwmac ff702000.ethernet eth0: configuring for phy/rgmii link mode
+[    4.415855] FPGA Arcade Replay configured
+[    4.701951] input: BLISS-BOX 4-PLAY(GP)PORT.1 as /devices/platform/soc/ffb40000.usb/usb1/1-1/1-1.6/1-1.6:1.0/0003:16D0:0D04.0002/input/input1
+[    4.720074] hid-generic 0003:16D0:0D04.0002: input: USB HID v1.10 Gamepad [BLISS-BOX 4-PLAY(GP)PORT.1] on usb-ffb40000.usb-1.6/input0
+[    5.848870] usb 1-1.7: new low-speed USB device number 5 using dwc2
+[    6.388857] usb 1-1.7: device not accepting address 5, error -32
+[    6.738859] usb 1-1.7: new low-speed USB device number 6 using dwc2
+[    6.951950] input: BLISS-BOX 4-PLAY(GP)PORT.1 as /devices/platform/soc/ffb40000.usb/usb1/1-1/1-1.7/1-1.7:1.0/0003:16D0:0D04.0003/input/input2
+[    6.970515] hid-generic 0003:16D0:0D04.0003: input: USB HID v1.10 Gamepad [BLISS-BOX 4-PLAY(GP)PORT.1] on usb-ffb40000.usb-1.7/input0
+[    8.010245] socfpga-dwmac ff702000.ethernet eth0: Link is Up - 1Gbps/Full - flow control rx/tx
+[    8.018931] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[   10.730255] socfpga-dwmac ff702000.ethernet eth0: Link is Down
+[   11.014952] socfpga-dwmac ff702000.ethernet eth0: PHY [stmmac-0:01] driver [Micrel KSZ9031 Gigabit PHY]
+[   11.028998] socfpga-dwmac ff702000.ethernet eth0: No Safety Features support found
+[   11.036875] socfpga-dwmac ff702000.ethernet eth0: registered PTP clock
+[   11.043476] socfpga-dwmac ff702000.ethernet eth0: configuring for phy/rgmii link mode
+[   18.330246] socfpga-dwmac ff702000.ethernet eth0: Link is Up - 1Gbps/Full - flow control rx/tx
+[   18.338932] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready

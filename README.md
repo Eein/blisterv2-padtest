@@ -8,6 +8,8 @@ Otherwise, they will be noted (for example, NES)
 
 https://github.com/ShendoXT/padtest/releases/tag/1.0
 
+`lsusb`/`dmesg` output can be found [HERE](https://git.sr.ht/~eein/padtest-results/blob/master/diag.txt)
+
 X O □ ∆
 
 
