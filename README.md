@@ -1,5 +1,11 @@
 # Padtest
 
+All tests are assuming the position of the original PSX controller.
+
+For example, for SNES the B button will be considered X and the Y button will be considered □
+
+Otherwise, they will be noted (for example, NES)
+
 https://github.com/ShendoXT/padtest/releases/tag/1.0
 
 X O □ ∆
@@ -93,6 +99,27 @@ R1 -> R1
 R2 -> n/a
 Select -> □
 Start -> ?
+L3 -> n/a
+R3 -> n/a
+Up -> Up
+Down -> Down
+Left -> Left
+Right -> Right
+```
+
+### iBuffalo SNES on USB port (
+
+```
+X -> O
+O -> X
+∆ -> □
+□ -> ∆
+L1 -> L1
+L2 -> n/a
+R1 -> R1
+R2 -> n/a
+Select -> Select
+Start -> Start
 L3 -> n/a
 R3 -> n/a
 Up -> Up
