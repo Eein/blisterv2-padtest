@@ -10,7 +10,12 @@ https://github.com/ShendoXT/padtest/releases/tag/1.0
 
 X O □ ∆
 
+
 ## Blister v2
+
+![blisster v2](https://git.sr.ht/~eein/padtest-results/blob/master/blister.png)
+
+*Below, the LLAPI port is the weird HDMI-like Bliss-Box port on the above board.*
 
 ### Keyboard in normal port
 Everything seems to map, but its acting as if its in turbo mode
@@ -86,7 +91,7 @@ Right -> Right
 PS button -> opens fpga menu
 ```
 
-### Super Famicom/SNES on LLAPI port (
+### Super Famicom/SNES on LLAPI port
 
 ```
 X -> X
@@ -107,7 +112,7 @@ Left -> Left
 Right -> Right
 ```
 
-### iBuffalo SNES on USB port (
+### iBuffalo SNES on USB port
 
 ```
 X -> O
@@ -128,7 +133,7 @@ Left -> Left
 Right -> Right
 ```
 
-### NES on LLAPI port (
+### NES on LLAPI port
 
 ```
 X (b) -> X
