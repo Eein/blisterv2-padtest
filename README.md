@@ -6,6 +6,7 @@ X O □ ∆
 ### PS2 Controller on LLAPI port
 Controller does not register as analog, so some mappings may be missing
 
+```
 X -> X
 O -> O
 ∆ -> ∆
@@ -22,3 +23,4 @@ Up -> Up
 Down -> Down
 Left -> Left
 Right -> Right
+```
