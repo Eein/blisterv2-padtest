@@ -31,8 +31,11 @@ Left -> Left
 Right -> Right
 ```
 
+### PS# Controller plugged into USB port
+Controller does not activate/work - looks for bluetooth
+
 ### PS4 Controller plugged into USB port
-Controller does not register as analog
+Perfect Mapping - Controller does not register as analog
 
 ```
 X -> X
@@ -55,7 +58,7 @@ PS button -> opens fpga menu
 ```
 
 ### PS5 Controller plugged into USB port
-Controller does not register as analog
+Perfect mapping - Controller does not register as analog
 
 ```
 X -> X
@@ -75,6 +78,48 @@ Down -> Down
 Left -> Left
 Right -> Right
 PS button -> opens fpga menu
+```
+
+### Super Famicom/SNES on LLAPI port (
+
+```
+X -> X
+O -> O
+∆ -> ∆
+□ -> ?
+L1 -> L1
+L2 -> n/a
+R1 -> R1
+R2 -> n/a
+Select -> □
+Start -> ?
+L3 -> n/a
+R3 -> n/a
+Up -> Up
+Down -> Down
+Left -> Left
+Right -> Right
+```
+
+### NES on LLAPI port (
+
+```
+X (b) -> X
+O (a) -> O
+∆ -> n/a
+□ -> n/a
+L1 -> n/a
+L2 -> n/a
+R1 -> n/a
+R2 -> n/a
+Select -> □
+Start -> ?
+L3 -> n/a
+R3 -> n/a
+Up -> Up
+Down -> Down
+Left -> Left
+Right -> Right
 ```
 
 ### Pokken Tournament Controller on USB port
