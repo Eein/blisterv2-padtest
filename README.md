@@ -48,7 +48,8 @@ Right -> Right
 ```
 
 ### PS3 Controller plugged into USB port
-Controller does not activate/work - looks for bluetooth
+Perfect Mapping on (4b40567)- Controller does not register as analog
+
 
 ### PS4 Controller plugged into USB port
 Perfect Mapping - Controller does not register as analog
